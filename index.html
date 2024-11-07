@@ -1,18 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title>Typing game</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>Typing game!</h1>
- <p>Practice your typing skills with a quote from Sherlock Holmes. Click
-**start** to begin!</p>
- <p id="quote"></p>
- <p id="message"></p>
- <div>
- <input type="text" aria-label="current word" id="typed-value" />
- <button type="button" id="start">Start</button>
- </div>
- <script src="script.js"></script>
+    <h1>Typing Game!</h1>
+    <p>Practice your typing skills with a quote from Sherlock Holmes. Click **start** to begin!</p>
+    <p id="quote"></p>
+    <p id="message"></p>
+    <div>
+        <input type="text" aria-label="current word" id="typed-value" />
+        <button type="button" id="start">Start</button>
+    </div>
+
+    <!-- 모달 창 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
